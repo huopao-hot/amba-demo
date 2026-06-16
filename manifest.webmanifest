@@ -1,0 +1,19 @@
+{
+  "name": "ABA Wallet",
+  "short_name": "ABA",
+  "description": "Local Khmer demo wallet interface for entertainment only.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a1723",
+  "theme_color": "#160f2f",
+  "icons": [
+    {
+      "src": "./assets/app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
