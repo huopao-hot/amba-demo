@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#160f2f" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ABA " />
+    <title>ABA  Wallet</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/app-icon.png" type="image/png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="phone-shell" data-screen="home">
+      <button class="demo-ribbon" type="button" data-action="open-settings" aria-label="open local settings">SET</button>
+
+      <section class="screen screen-home" aria-label="home">
+        <header class="hero">
+          <div class="status-bar" aria-hidden="true">
+            <span class="signal"></span>
+          </div>
+          <div class="top-actions" aria-label="top navigation">
+            <span class="home-spacer" aria-hidden="true"></span>
+            <div class="header-icons">
+              <button class="icon-btn ghost" type="button" data-action="noop" data-icon-key="topMore" aria-label="more">•••</button>
+              <button class="icon-btn ghost dot-btn" type="button" data-action="noop" data-icon-key="topBell" aria-label="notifications">◦</button>
+              <button class="icon-btn ghost" type="button" data-action="noop" data-icon-key="topCard" aria-label="card shortcut">▭</button>
+              <button class="icon-btn hot" type="button" data-action="noop" data-icon-key="topSearch" aria-label="quick shortcut">⌕</button>
+            </div>
+          </div>
+          <div class="profile-line">
+            <button class="avatar-wrap" type="button" data-action="open-settings" aria-label="avatar settings">
+              <img data-avatar src="./assets/default-avatar.svg" alt="profile avatar" />
+              <span></span>
+            </button>
+            <div>
+              <p class="muted" data-text="greeting">សួស្តីរសៀល</p>
+              <h1 data-name>Rany</h1>
+              <p class="user-id" data-user-id></p>
+            </div>
+          </div>
+        </header>
+
+        <main class="home-content">
+          <section class="account-card">
+            <div class="card-watermark">ABA</div>
+            <div class="card-statue" data-icon-key="accountOrnament">♔</div>
+            <div class="card-top">
+              <div>
+                <p class="card-label" data-text="defaultAccountLabel">គណនីលំនាំដើម</p>
+                <h2 data-account-title data-text="savingsTitle">គណនីសន្សំ</h2>
+              </div>
+              <button class="small-square" type="button" data-action="toggle-balance" data-icon-key="balanceEye" aria-label="toggle balance">◎</button>
+            </div>
+            <div class="balance-line">
+              <span data-balance>128,800.00</span>
+              <small data-currency>USD</small>
+            </div>
+            <p class="account-number" data-account>000 001 234 567</p>
+            <nav class="mini-actions" aria-label="account actions">
+              <button type="button" data-action="noop"><span class="action-icon" data-icon-key="receive">↙</span><i data-text="receiveAction">ទទួលប្រាក់</i></button>
+              <button type="button" data-action="noop"><span class="action-icon" data-icon-key="send">↗</span><i data-text="sendAction">ផ្ញើប្រាក់</i></button>
+              <button type="button" data-action="noop"><span class="action-icon" data-icon-key="analysis">▥</span><i data-text="analysisAction">វិភាគ</i></button>
+            </nav>
+          </section>
+
+          <section class="tool-grid" aria-label="tools">
+            <button class="tool-card" type="button" data-action="noop">
+              <span class="asset-icon temple" data-icon-key="toolAccount"></span>
+              <strong data-text="toolAccount">គណនី</strong>
+            </button>
+            <button class="tool-card" type="button" data-action="noop">
+              <span class="asset-icon crown" data-icon-key="toolPayment"></span>
+              <strong data-text="toolPayment">ទូទាត់</strong>
+            </button>
+            <button class="tool-card" type="button" data-action="noop">
+              <span class="asset-icon coin" data-icon-key="toolCard"></span>
+              <strong data-text="toolCard">កាត</strong>
+            </button>
+            <button class="tool-card" type="button" data-action="noop">
+              <span class="asset-icon qr" data-icon-key="toolScan"></span>
+              <strong data-text="toolScan">ស្កេន QR</strong>
+            </button>
+            <button class="tool-card" type="button" data-action="noop">
+              <span class="asset-icon kite" data-icon-key="toolFavorite"></span>
+              <strong data-text="toolFavorite">ចំណូលចិត្ត</strong>
+            </button>
+            <div class="transfer-tile-wrap">
+              <button class="tool-card transfer-card" type="button" data-action="go-transfer">
+                <span class="asset-icon dancer" data-icon-key="toolTransfer"></span>
+                <strong data-text="toolTransfer">ផ្ទេរ</strong>
+              </button>
+              <button class="settings-peek" type="button" data-action="open-settings" aria-label="quick settings">⚙</button>
+            </div>
+          </section>
+
+          <section class="quick-row" aria-label="quick tools">
+            <button type="button" data-action="noop" data-text="quickDiscover">រកឃើញ</button>
+            <button type="button" data-action="noop" data-text="quickRate">អត្រាប្តូរ</button>
+            <button type="button" data-action="noop" data-text="quickLocation">ទីតាំង</button>
+            <button type="button" data-action="noop" data-text="quickBook">សៀវភៅ</button>
+          </section>
+
+          <section class="promo-card">
+            <div>
+              <p data-text="promoEyebrow">ព័ត៌មាន និងប្រូម៉ូសិន</p>
+              <h2 data-text="promoTitle">ABA </h2>
+              <span data-text="promoText">ការគ្រប់គ្រងទ្រព្យសម្បត្តិ</span>
+            </div>
+            <div class="chat-bubbles" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </div>
+          </section>
+        </main>
+      </section>
+
+      <section class="screen screen-transfer" aria-label="transfer">
+        <header class="page-hero compact">
+          <div class="status-bar" aria-hidden="true">
+            <span class="signal"></span>
+          </div>
+          <div class="top-actions">
+            <button class="icon-btn ghost" type="button" data-action="go-home" data-icon-key="topBack" aria-label="back">‹</button>
+            <div class="header-icons">
+              <button class="icon-btn ghost" type="button" data-action="noop" data-icon-key="topCalendar" aria-label="calendar">◌</button>
+              <button class="icon-btn ghost" type="button" data-action="noop" data-icon-key="topSearch" aria-label="search">⌕</button>
+            </div>
+          </div>
+          <div class="transfer-title">
+            <h1 data-text="transferTitle">ABA ផ្ទេរប្រាក់</h1>
+            <p data-text="transferSubtitle">ផ្ទេរប្រាក់ទៅមិត្តភក្តិ និងក្រុមគ្រួសារ ជាមួយជំហានងាយៗ</p>
+            <div class="hero-icon" data-icon-key="heroTransfer">⇄</div>
+          </div>
+        </header>
+
+        <main class="transfer-content">
+          <section class="panel">
+            <h2 data-text="frequentTitle">គំរូទូទាត់ប្រចាំ</h2>
+            <button class="wide-create" type="button" data-action="noop"><i data-text="createLabel">✦ បង្កើតគំរូទូទាត់ប្រចាំ</i></button>
+          </section>
+
+          <section class="transfer-block">
+            <h2 data-text="localTransferTitle">ផ្ទេរប្រាក់ក្នុងស្រុក</h2>
+            <div class="transfer-options">
+              <button class="option-card" type="button" data-action="go-form">
+                <span class="circle blue" data-icon-key="ownAccount">↻</span>
+                <strong data-text="ownAccountTitle">គណនីផ្ទាល់ខ្លួន</strong>
+                <small data-text="ownAccountSubtitle"> ផ្ទេរប្រាក់ទៅគណនី ABA ខ្លួនឯង</small>
+              </button>
+              <button class="option-card" type="button" data-action="go-form">
+                <span class="circle brand" data-icon-key="brandAccount">ABM</span>
+                <strong data-text="brandAccountTitle">គណនី ABA ណាមួយ</strong>
+                <small data-text="brandAccountSubtitle">ផ្ទេរប្រាក់ទៅគណនី ABA ណាមួយ</small>
+              </button>
+              <button class="option-card" type="button" data-action="noop">
+                <span class="circle coral" data-icon-key="localBanks">▣</span>
+                <strong data-text="localBanksTitle">ធនាគារ និង Wallet ក្នុង</strong>
+                <small data-text="localBanksSubtitle">ផ្ទេរប្រាក់ទៅធនាគារ និង Wallet ក្នុងស្រុក</small>
+              </button>
+              <button class="option-card" type="button" data-action="noop">
+                <span class="circle green" data-icon-key="cashCode">ECASH</span>
+                <strong data-text="cashCodeTitle">ផ្ញើប្រាក់តាមកូដ</strong>
+                <small data-text="cashCodeSubtitle">ផ្ញើប្រាក់តាមលេខកូដដើម្បីដកពី ម៉ាស៊ីន ATM របស់ ABA</small>
+              </button>
+            </div>
+          </section>
+
+          <section class="transfer-block">
+            <h2 data-text="internationalTitle">ផ្ទេរប្រាក់ទៅក្រៅប្រទេស</h2>
+            <div class="rail">
+              <button type="button" data-action="noop"><span class="circle salmon" data-icon-key="swiftIcon">SWIFT</span><i data-text="swiftLabel">SWIFT - សេវាផ្ទេរប្រាក់ឆ្លងប្រទេស</i></button>
+              <button type="button" data-action="noop"><span class="circle orange" data-icon-key="riaIcon">DBP</span><i data-text="riaLabel">DBPធនាគារឌូបៃ</i></button>
+              <button type="button" data-action="noop"><span class="circle white" data-icon-key="moneyGramIcon">RIA</span><i data-text="moneyGramLabel">សេវាផ្ទេរ/ទទួលប្រាក់ Ria</i></button>
+            </div>
+          </section>
+        </main>
+      </section>
+
+      <section class="screen screen-form" aria-label="transfer form">
+        <header class="page-hero form-hero">
+          <div class="status-bar" aria-hidden="true">
+            <span class="signal"></span>
+          </div>
+          <div class="top-actions">
+            <button class="icon-btn ghost" type="button" data-action="go-transfer" data-icon-key="topBack" aria-label="back">‹</button>
+            <span class="home-spacer" aria-hidden="true"></span>
+          </div>
+          <div class="form-title">
+            <button class="round-logo" type="button" data-action="open-logo-settings" data-icon-key="formLogo" aria-label="logo settings">ABA</button>
+            <h1 data-text="formTitle">ផ្ទេរទៅគណនី ABA ណាមួយ</h1>
+          </div>
+        </header>
+
+        <main class="form-content">
+          <button class="field select-field" type="button" data-action="open-account-picker">
+            <span data-text="selectAccountLabel">ជ្រើសរើសគណនី</span>
+            <b>▣ <i data-account-short>Savings</i>: <em data-balance>128,800.00</em> <small data-currency>USD</small></b>
+            <strong class="field-caret">⌄</strong>
+          </button>
+          <label class="field">
+            <span data-text="recipientLabel">លេខគណនីអ្នកទទួល</span>
+            <input data-recipient-input inputmode="numeric" data-placeholder="recipientPlaceholder" placeholder="បញ្ចូលលេខគណនីអ្នកទទួល" />
+          </label>
+          <label class="field">
+            <span data-text="amountLabel">ចំនួនទឹកប្រាក់</span>
+            <input data-amount-input inputmode="decimal" placeholder="0.00" />
+          </label>
+          <label class="field">
+            <span data-text="noteLabel">កំណត់សម្គាល់</span>
+            <input data-note-input data-placeholder="notePlaceholder" placeholder="ជាជម្រើស" />
+          </label>
+          <label class="toggle-row">
+            <span data-text="favoriteToggle">☆ បន្ថែមទៅចំណូលចិត្ត</span>
+            <input type="checkbox" />
+          </label>
+          <label class="toggle-row">
+            <span data-text="giftToggle">□ ផ្ញើជាកាដូ</span>
+            <input type="checkbox" />
+          </label>
+          <button class="submit-transfer" type="button" data-action="demo-transfer" data-text="submitTransfer">ផ្ទេរ</button>
+        </main>
+      </section>
+
+      <section class="screen screen-receipt" aria-label="transfer success">
+        <main class="receipt-screen">
+          <button class="receipt-back icon-btn ghost" type="button" data-action="go-form" data-icon-key="topBack" aria-label="back">‹</button>
+          <div class="receipt-status">
+            <div class="success-check" aria-hidden="true">✓</div>
+            <h1 data-text="receiptSuccessTitle">ជោគជ័យ</h1>
+          </div>
+
+          <section class="receipt-card" aria-label="receipt">
+            <div class="receipt-head">
+              <div class="receipt-avatar" data-receipt-initials>RD</div>
+              <div>
+                <strong data-receipt-amount>-0.00 USD</strong>
+                <span data-receipt-name>ROTHA DUONG</span>
+              </div>
+            </div>
+            <div class="receipt-cut" aria-hidden="true"></div>
+            <dl class="receipt-details">
+              <div>
+                <dt data-text="receiptTransactionIdLabel">លេខប្រតិបត្តិការ</dt>
+                <dd data-receipt-id>54329858452</dd>
+              </div>
+              <div>
+                <dt data-text="receiptDateLabel">កាលបរិច្ឆេទប្រតិបត្តិការ</dt>
+                <dd data-receipt-date></dd>
+              </div>
+              <div>
+                <dt data-text="receiptSourceLabel">ប្រភពទូទាត់</dt>
+                <dd data-receipt-source></dd>
+              </div>
+            </dl>
+          </section>
+
+          <nav class="receipt-actions" aria-label="receipt actions">
+            <button type="button" data-action="noop"><span>⇧</span><i data-text="receiptShare">ចែករំលែក</i></button>
+            <button type="button" data-action="go-transfer"><span>↻</span><i data-text="receiptRepeat">ធ្វើម្តងទៀត</i></button>
+            <button type="button" data-action="noop"><span>⇩</span><i data-text="receiptDownload">ទាញយក</i></button>
+            <button type="button" data-action="noop"><span>☆</span><i data-text="receiptSave">រក្សាទុក</i></button>
+          </nav>
+        </main>
+      </section>
+
+      <aside class="settings-sheet" aria-hidden="true" aria-label="settings">
+        <div class="sheet-scrim" data-action="close-settings"></div>
+        <form class="sheet-card" data-settings-form>
+          <div class="sheet-head">
+            <div>
+              <p>ABA </p>
+              <h2 data-text="settingsTitle">ការកំណត់</h2>
+            </div>
+            <button class="icon-btn ghost" type="button" data-action="close-settings" aria-label="close">×</button>
+          </div>
+
+          <div class="avatar-editor">
+            <img data-avatar-preview src="./assets/default-avatar.svg" alt="avatar preview" />
+            <label class="upload-btn">
+              <span data-text="profileUpload">ប្តូররូប</span>
+              <input data-avatar-input type="file" accept="image/*" />
+            </label>
+          </div>
+
+          <label>
+            <span data-text="nameLabel">ឈ្មោះ</span>
+            <input name="name" autocomplete="off" />
+          </label>
+          <label>
+            <span>ID</span>
+            <input name="userId" autocomplete="off" />
+          </label>
+          <label>
+            <span data-text="accountNoLabel">លេខគណនី</span>
+            <input name="accountNumber" inputmode="numeric" autocomplete="off" />
+          </label>
+          <label>
+            <span data-text="cardNoLabel">លេខកាត</span>
+            <input name="cardNumber" inputmode="numeric" autocomplete="off" />
+          </label>
+          <label>
+            <span data-text="balanceLabel">សមតុល្យ</span>
+            <input name="balance" inputmode="decimal" autocomplete="off" />
+          </label>
+          <label>
+            <span data-text="currencyLabel">រូបិយប័ណ្ណ</span>
+            <input name="currency" maxlength="5" autocomplete="off" />
+          </label>
+          <label>
+            <span>回执收款人 / Receipt name</span>
+            <input name="receiptName" autocomplete="off" />
+          </label>
+          <label>
+            <span>回执 ID / Receipt ID</span>
+            <input name="receiptId" inputmode="numeric" autocomplete="off" />
+          </label>
+          <label>
+            <span>付款来源 / Payment source</span>
+            <input name="receiptSource" autocomplete="off" />
+          </label>
+          <label>
+            <span>字体 / Font</span>
+            <input name="fontFamily" autocomplete="off" placeholder="Noto Sans Khmer, Segoe UI, Arial" />
+          </label>
+          <label>
+            <span>字号比例 / Text scale</span>
+            <input name="fontScale" inputmode="decimal" autocomplete="off" placeholder="1" />
+          </label>
+          <details class="config-section compact-config">
+            <summary>版式微调 / Layout</summary>
+            <label>
+              <span>顶部图位置 / Hero position</span>
+              <input name="heroPosition" autocomplete="off" placeholder="center top" />
+            </label>
+            <label>
+              <span>首页顶部高度 px</span>
+              <input name="homeHeroHeight" inputmode="numeric" autocomplete="off" placeholder="280" />
+            </label>
+            <label>
+              <span>转账页顶部高度 px</span>
+              <input name="transferHeroHeight" inputmode="numeric" autocomplete="off" placeholder="336" />
+            </label>
+            <label>
+              <span>表单页顶部高度 px</span>
+              <input name="formHeroHeight" inputmode="numeric" autocomplete="off" placeholder="430" />
+            </label>
+            <label>
+              <span>内容面板偏移 px</span>
+              <input name="contentOffset" inputmode="numeric" autocomplete="off" placeholder="0" />
+            </label>
+            <label>
+              <span>面板圆角 px</span>
+              <input name="panelRadius" inputmode="numeric" autocomplete="off" placeholder="24" />
+            </label>
+            <label>
+              <span>卡片圆角 px</span>
+              <input name="cardRadius" inputmode="numeric" autocomplete="off" placeholder="8" />
+            </label>
+            <label>
+              <span>账户卡高度 px</span>
+              <input name="accountCardHeight" inputmode="numeric" autocomplete="off" placeholder="176" />
+            </label>
+            <label>
+              <span>主面板色 / Panel color</span>
+              <input name="panelColor" autocomplete="off" placeholder="rgba(9, 23, 36, 0.92)" />
+            </label>
+            <label>
+              <span>卡片色 / Tile color</span>
+              <input name="tileColor" autocomplete="off" placeholder="rgba(30, 50, 66, 0.9)" />
+            </label>
+          </details>
+
+          <div class="card-preview">
+            <small>លេខកាត</small>
+            <strong data-card-number>5199 8842 3361 2026</strong>
+          </div>
+
+          <div class="sheet-actions">
+            <button class="secondary" type="button" data-action="reset-profile" data-text="resetLabel">កំណត់ដើម</button>
+            <button class="primary" type="submit" data-text="saveLabel">រក្សាទុក</button>
+          </div>
+          <details class="config-section" open>
+            <summary>文字 / Text</summary>
+            <div class="config-grid" data-text-config></div>
+          </details>
+          <details class="config-section" open>
+            <summary>图片与图标 / Assets</summary>
+            <p class="config-hint">表单页圆形 Logo 对应 formLogo；手机桌面 App 图标用 scripts/set-app-icon.ps1 替换源文件后重新打包。</p>
+            <div class="config-grid" data-asset-config></div>
+          </details>
+        </form>
+      </aside>
+
+      <aside class="account-picker" aria-hidden="true" aria-label="account picker">
+        <div class="sheet-scrim" data-action="close-account-picker"></div>
+        <div class="picker-card">
+          <div class="sheet-head">
+            <div>
+              <p>ABA </p>
+              <h2 data-text="pickerTitle">ជ្រើសរើសគណនី</h2>
+            </div>
+            <button class="icon-btn ghost" type="button" data-action="close-account-picker" aria-label="close">×</button>
+          </div>
+          <div class="picker-list">
+            <button type="button" data-action="choose-account" data-account-option="savings">
+              <span class="picker-icon">▣</span>
+              <span>
+                <strong>Savings</strong>
+                <small data-picker-savings>128,800.00 USD • 000 001 234 567</small>
+              </span>
+              <b data-selected-account="savings">✓</b>
+            </button>
+            <button type="button" data-action="choose-account" data-account-option="current">
+              <span class="picker-icon alt">◈</span>
+              <span>
+                <strong>Current</strong>
+                <small>0.00 USD • 000 008 888 001</small>
+              </span>
+              <b data-selected-account="current">✓</b>
+            </button>
+            <button type="button" data-action="choose-account" data-account-option="wallet">
+              <span class="picker-icon warm">◇</span>
+              <span>
+                <strong>Wallet</strong>
+                <small>12.34 USD • LOCAL WALLET</small>
+              </span>
+              <b data-selected-account="wallet">✓</b>
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <aside class="password-modal" aria-hidden="true" aria-label="password">
+        <div class="sheet-scrim" data-action="close-password"></div>
+        <div class="password-card">
+          <h2 data-text="passwordTitle">បញ្ចូលលេខសម្ងាត់</h2>
+          <p data-text="passwordHint">បញ្ចូលលេខណាមួយសម្រាប់បន្តការបង្ហាញ</p>
+          <input data-password-input inputmode="numeric" autocomplete="off" type="password" placeholder="••••" />
+          <div class="password-actions">
+            <button type="button" data-action="close-password" data-text="passwordCancel">បោះបង់</button>
+            <button class="primary" type="button" data-action="confirm-password" data-text="passwordConfirm">បញ្ជាក់</button>
+          </div>
+        </div>
+      </aside>
+
+      <div class="toast" role="status" aria-live="polite"></div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
